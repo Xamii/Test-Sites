@@ -11,26 +11,24 @@
     <title>Homebase</title>
       <style>
          
-          #nav{
-              
-              padding-top: 50px;
-          }
           
-          .row{
+          .container nav {
               
-              padding-top: 50px;
+              padding-top: 30px;
           }
-          
+        
           nav .navbar-nav li a{
-  color: black !important;
+              color: black;
               font-weight: 500;
+              font-family: sans-serif;
               
               
   }
         
           nav .container-fluid #home{
-  color: black !important;
-              font-weight: 800;
+               color: black;
+              font-weight: 600;
+              font-family: sans-serif;
           }
           .col a{
                
@@ -40,44 +38,96 @@
   }
           .col{
               
-              padding-top: 30px;
+              padding-top: 60px;
+          }
+          
+          .row{
+              
+              padding-top: 50px;
           }
           
           #form{
-              
-              padding-top: 10px
+
+              padding-top: 10px;
+                 
           }
           
-          h1{
+        h1 {
         
               font-family: "Helvetica";
-              font-weight: 700;
-              font-size: 80px;
-              line-height: 100%;
+              font-weight: 900;
+              font-size: 54px;
+              color: #000000;
+              margin: 0px 0px 20px;
+              line-height: 1.13;
+               letter-spacing: -0.02em;
           }   
          
           p{
               font-weight: 500;
+              color: black;
+              font-size: 18px;
+              margin: 0px 0px 20px;
+               letter-spacing: -0.02em;
+               
+            
+              
           }
-	     .container #right img{
-              margin-top: -40px;
-          } 
+          .container #right img{
+              margin-top: -50px;
+              width:100%;
+              
+              
+          }
+          #left .container {
+               padding-right: 30px;
+               flex-shrink: 0;
+               max-width: 500px;
+              max-height: 373px:
+             
+          }
          
+          .btn--primary{
+              background-color: #31CB53;
+              color: rgb(255, 255, 255);
+          }
+          .btn{
+              font-weight: 700;
+              border-radius: 12px;
+              letter-spacing: -0.02em;
+              border: 0px;
+              display: inline-block;
+              font-size: 15px;
+              line-height: 24px;
+              padding: 12px 24px;
+          }
+           #Email2{
+              font-size: 15px;
+              display: inline-block;
+    background-color: rgb(243, 243, 243);
+    border-radius: 12px;
+    border: 1px solid transparent;
+    padding: 12px 16px;
+    height: 48px;
+                line-height: 1.15;  
+          }
+          
       </style>
   </head>
   <body>
       
-      
-      
-      
-     <div class="container" id="nav">
-    <nav class="navbar navbar-expand-lg  ">
+     
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-fixed-top bg-transparent">
       <div class="container-fluid">
         <a class="navbar-brand" id="home" href="#">
-    <img src="images/globe.png" width="40" height="40" alt="">
+    <img src="images/globe.png" width="30" height="30" alt="">
             homebase
   </a>
-        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
         <div class="collapse navbar-collapse" id="navbarsExample09">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item active">
@@ -94,11 +144,13 @@
             </li>
             
           </ul>
-          <button type="button" class="btn btn-dark"><b>Get early access</b></button>
+          <button type="button" class="btn btn-dark">Get early access</button>
         </div>
       </div>
     </nav>
-      </div>
+</div>
+    
+  
       
       
       <div class="container">
@@ -109,14 +161,17 @@
           <div class="container">
   <h1>The platform for local-first software.</h1>
   <p> Don't write real time APIs. Move your database to the browser. Homebase keeps local data in sync so that you can build fast and collaborative React apps.</p>
+              </div>
               
-              <form class="row row-cols-lg-auto g-3 align-items-center" role="form" id="form">
+              <div class="container">
+              <form class="row row-cols-lg-auto" role="form" id="form">
 				  <div class="form-group">
-				    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Your Email">
+				    <input type="email" class="form-control" id="Email2" placeholder="Your Email">
 				  </div>
-				  <button type="submit" class="btn btn-success"><b>Get early access</b></button>
+				  <button type="submit" class="btn btn--primary">Get early access</button>
 				</form> 
-               <div class="col" >
+                  
+               <div class="col">
                    
                    
                    <a class="navbar-brand" href="#" >Integrations</a> 
@@ -142,14 +197,17 @@
           
           </div>
           
-          
+         
           <div class="col-md-6" id="right">
-              <div class="container">
+              
               <img src="images/abstract.jpg"?>  
-              </div>      
+                    
           
           </div>
+    
+              
      </div> 
+      </div>
 
          
         
