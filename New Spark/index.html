@@ -1,0 +1,124 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified JavaScript -->
+      
+      
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400;1,900&family=Lobster&family=Noto+Sans+JP:wght@300;400&family=Noto+Sans:wght@400;700&family=Raleway:wght@100;200&family=Redressed&family=Rubik:wght@400;500&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Benne&family=Carter+One&family=Marko+One&family=Yeseva+One&display=swap" rel="stylesheet">
+      
+      
+       <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+       <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <title>Spark</title>
+    
+     </head>
+
+    
+  <body>
+      
+<!------------------------------------------------------------------------
+    Navigation Section 
+-------------------------------------------------------------------------->
+
+      
+      <nav class="navbar transparent navbar-expand-lg navbar-light fixed-top" style="padding-top: 20px;">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+     
+        <img src="images/logo.png" width="30" height="30" alt=""> spark
+    
+    </a>
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="d-flex">
+        <button class="btn btn-primary-outline" id="btn1" type="submit">Sign up</button>
+      </form>
+    </div>
+  </div>
+      </nav>
+    
+      <!------------------------------------------------------------------------
+   End of Navigation Section 
+-------------------------------------------------------------------------->
+      
+<!------------------------------------------------------------------------
+    Body Section 
+-------------------------------------------------------------------------->
+   
+      <div class="container">
+        <div class="row">    
+         <div class="col-md-6 col-sm-6" id="left">
+          <h1>People who <br/> care about <br/> your growth</h1>
+
+              <form role="form" id="form">
+                  <div class="form-group">
+                   <button type="submit" class="btn btn--primary">Get started</button>
+                  <a>Try platform for free</a>
+                  </div>
+                </form> 
+                 
+             <div class="container" id="image2">
+               
+             <img src="images/ablogo.jpg"> 
+               
+             </div>
+                 
+         </div>
+            
+     <div class="col-md-6 col-sm-6"  id="right">
+               
+             <img src="images/Abstract.jpg" style="height: 131%;width: 100%;"> 
+               
+          </div>
+          
+          
+          
+        </div>
+      </div>
+      
+<!------------------------------------------------------------------------
+    End of Body Section 
+-------------------------------------------------------------------------->
+  
+  
+  
+  
+  
+  <script>
+    
+   /*-------------------------------------------------------------------------------
+    Navigation - Hide mobile menu after clicking on a link
+  -------------------------------------------------------------------------------*/
+
+    $('.navbar-collapse').click(function(){
+        $(".navbar-collapse").collapse('hide');
+    });
+
+
+    $(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $(".fixed-top").addClass("top-nav-collapse");
+        console.log('this');
+    } else {
+        $(".fixed-top").removeClass("top-nav-collapse");
+    }
+  });
+    </script>
+    
+   
+
+    </body>
+    </html>
